@@ -18,11 +18,47 @@ export class CatsComponent implements OnInit {
   isEditing = false;
 
   addCatForm: FormGroup;
+  
   pay = new FormControl('', Validators.required);
   pays = new FormControl('', Validators.required);
   teams = new FormControl('', Validators.required);
   persons = new FormControl('', Validators.required);
 
+  pays0= new FormControl('', Validators.required);
+  pays1= new FormControl('', Validators.required);
+  pays2= new FormControl('', Validators.required);
+  pays3= new FormControl('', Validators.required);
+  pays4= new FormControl('', Validators.required);
+  pays5= new FormControl('', Validators.required);
+
+  teams1F= new FormControl('', Validators.required);
+  teams1S= new FormControl('', Validators.required);
+  teams1R= new FormControl('', Validators.required);
+  teams1C= new FormControl('', Validators.required);
+  teams1A= new FormControl('', Validators.required);
+  teams1P= new FormControl('', Validators.required);
+
+  teams2F= new FormControl('', Validators.required);
+  teams2S= new FormControl('', Validators.required);
+  teams2R= new FormControl('', Validators.required);
+  teams2C= new FormControl('', Validators.required);
+  teams2A= new FormControl('', Validators.required);
+  teams2P= new FormControl('', Validators.required);
+
+  persons1F= new FormControl('', Validators.required);
+  persons1S= new FormControl('', Validators.required);
+  persons1R= new FormControl('', Validators.required);
+  persons1C= new FormControl('', Validators.required);
+  persons1A= new FormControl('', Validators.required);
+  persons1P= new FormControl('', Validators.required);
+
+  persons2R= new FormControl('', Validators.required);
+  persons2A= new FormControl('', Validators.required);
+  persons2F= new FormControl('', Validators.required);
+  persons2S= new FormControl('', Validators.required);
+  persons2P= new FormControl('', Validators.required);
+  persons2C= new FormControl('', Validators.required);
+  
   constructor(private catService: CatService,
               private formBuilder: FormBuilder,
               public toast: ToastComponent) { }
@@ -30,7 +66,41 @@ export class CatsComponent implements OnInit {
   ngOnInit() {
     this.getCats();
     this.addCatForm = this.formBuilder.group({
-      pay: this.pay,
+      pays0: this.pays0,
+      pays1: this.pays1,
+      pays2: this.pays2,
+      pays3: this.pays3,
+      pays4: this.pays4,
+      pays5: this.pays5,
+    
+      teams1F: this.teams1F,
+      teams1S: this.teams1S,
+      teams1R: this.teams1R,
+      teams1C: this.teams1C,
+      teams1A: this.teams1A,
+      teams1P: this.teams1P,
+    
+      teams2F: this.teams2F,
+      teams2S: this.teams2S,
+      teams2R: this.teams2R,
+      teams2C: this.teams2C,
+      teams2A: this.teams2A,
+      teams2P: this.teams2P,
+    
+      persons1F: this.persons1F,
+      persons1S: this.persons1S,
+      persons1R: this.persons1R,
+      persons1C: this.persons1C,
+      persons1A: this.persons1A,
+      persons1P: this.persons1P,
+    
+      persons2R: this.persons2R,
+      persons2A: this.persons2A,
+      persons2F: this.persons2F,
+      persons2S: this.persons2S,
+      persons2P: this.persons2P,
+      persons2C: this.persons2C,
+      
       pays: this.pays,
       teams: this.teams,
       persons: this.persons,
