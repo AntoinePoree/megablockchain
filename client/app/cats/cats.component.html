@@ -8,9 +8,9 @@
     <table class="table table-bordered">
       <thead class="thead-light">
         <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Age</th>
-          <th scope="col">Weight</th>
+          <th scope="col">Pays</th>
+          <th scope="col">Teams</th>
+          <th scope="col">Persons</th>
           <th scope="col">Actions</th>
         </tr>
       </thead>
@@ -21,16 +21,17 @@
       </tbody>
       <tbody *ngIf="!isEditing">
         <tr *ngFor="let cat of cats">
-          <td>{{ cat.name }}</td>
-          <td>{{ cat.age }}</td>
-          <td>{{ cat.weight }}</td>
+          <td>{{ cat.pays0 }}</td>
+          <td>{{ cat.teams1F }}</td>
+          <td>{{ cat.persons1F }}</td>
+          <td>{{ cat.pay }}</td>
           <td>
             <button class="btn btn-sm btn-primary" (click)="enableEditing(cat)"><i class="fa fa-pencil"></i> Edit</button> 
             <button class="btn btn-sm btn-danger" (click)="deleteCat(cat)"><i class="fa fa-trash"></i> Delete</button>
           </td>
         </tr>  
       </tbody>
-      <tbody *ngIf="isEditing">
+      <!-- <tbody *ngIf="isEditing">
         <tr>
           <td colspan="4">
             <form class="form-inline" #form="ngForm" (ngSubmit)="editCat(cat)">
@@ -42,11 +43,11 @@
             </form>
           </td>
         </tr>
-      </tbody>
+      </tbody> -->
     </table>
   </div>
 </div>
-
+<!-- 
 <div class="card" *ngIf="!isEditing">
   <h4 class="card-header">Add new cat</h4>
   <div class="card-body">
@@ -57,4 +58,4 @@
       <button class="btn btn-primary" type="submit" [disabled]="!addCatForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
     </form>
   </div>
-</div>
+</div> -->
