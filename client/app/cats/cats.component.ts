@@ -18,9 +18,10 @@ export class CatsComponent implements OnInit {
   isEditing = false;
 
   addCatForm: FormGroup;
-  name = new FormControl('', Validators.required);
-  age = new FormControl('', Validators.required);
-  weight = new FormControl('', Validators.required);
+  pay = new FormControl('', Validators.required);
+  pays = new FormControl('', Validators.required);
+  teams = new FormControl('', Validators.required);
+  persons = new FormControl('', Validators.required);
 
   constructor(private catService: CatService,
               private formBuilder: FormBuilder,
@@ -29,9 +30,10 @@ export class CatsComponent implements OnInit {
   ngOnInit() {
     this.getCats();
     this.addCatForm = this.formBuilder.group({
-      name: this.name,
-      age: this.age,
-      weight: this.weight,
+      pay: this.pay,
+      pays: this.pays,
+      teams: this.teams,
+      persons: this.persons,
     });
   }
 
