@@ -1,0 +1,35 @@
+/* h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 50px;
+    border-bottom: 4px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+
+} */
+.background {
+  background: whitesmoke;
+  color: black;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+/* Photos */
+.allPhoto {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.photo1 {
+    width: 400px;
+    height: 400px;
+}
+.photo2 {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+}
