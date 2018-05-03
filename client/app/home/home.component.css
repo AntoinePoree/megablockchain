@@ -6,6 +6,7 @@
     background: url("../../assets/bgacceuil.jpg");
     background-size: cover;
     z-index:5;
+    background-attachment: fixed;
 }
 
 .containeracceuil::before{
@@ -28,6 +29,8 @@
     top:0;
     left:0;
     padding:0;
+    transition:1s;
+    z-index:100;
 }
 
 .navitemlogo{

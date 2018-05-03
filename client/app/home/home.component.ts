@@ -48,9 +48,7 @@ export class HomeComponent implements OnInit {
       if (scroll == 0) {
         document.getElementById('changecolor').style.backgroundColor = "transparent";
       } else {
-        document.getElementById('changecolor').style.backgroundColor = "white";
+        document.getElementById('changecolor').style.backgroundColor = "black";
       }
     });
-  }
-
-
+  }}
