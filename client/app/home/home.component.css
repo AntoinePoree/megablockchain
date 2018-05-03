@@ -1,3 +1,5 @@
+/* debut de acceuil */
+
 .containeracceuil {
     width: 100% ;
     height: 100vh ;
@@ -33,6 +35,12 @@
     z-index:100;
 }
 
+.logo{
+    width:200px;
+    margin-top:40px;
+    margin-left:100px;
+}
+
 .navitemlogo{
     flex:8;
     color:white;
@@ -44,11 +52,13 @@
     width:150px;
     text-align:center;
     padding:10px;
-    font-weight:bold;
     cursor:pointer;
     height:100%;
     line-height:40px;
     transition:1s;
+    font-size:17px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style:italic;
 }
 
 .navitem:hover{
@@ -69,6 +79,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align:center;
+    font-family: 'Bungee', cursive;
 }
 
 .txttimer{
@@ -77,3 +88,162 @@
     font-size: 25px;
     font-weight:bold;
 }
+
+/* fin de acceuil */
+
+/* debut de équipes */
+
+.containerequipes{
+    background:black;
+    color:white;
+    position:relative;
+    display:block;
+    width:100%;
+    margin:0;
+}
+
+.titleequipes{
+    font-size:40px;
+    padding-top:50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    padding-left:100px;
+    border-bottom:4px solid white;
+    display:inline-block;
+    padding-bottom:10px;
+}
+
+.containerpays{
+    display:block;
+    width:100%;
+    display:flex;
+    margin-top:40px;
+    max-width:1200px;
+    margin-left:50%;
+    transform:translate(-50%);
+    padding-bottom:60px;
+}
+
+.colonne1equipes{
+    flex:1;
+}
+
+.colonne2equipes{
+    flex:1;
+    padding-top:20px;
+}
+
+.paysequipes{
+    width:90%;
+    margin-left:5%;
+    min-height:300px;
+    margin-bottom:60px;
+    position: relative;
+    z-index:10;
+    transition:1s;
+}
+
+.paysequipes::before{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.txtequipes{
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    padding:20px;
+    padding-bottom:0;
+    font-family:'Fjalla One', sans-serif;
+}
+
+.buttonequipes{
+    border:none;
+    width:100px;
+    margin-left:20px;
+    background-color:rgb(255, 187, 0);
+    font-weight:bold;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.buttonequipes:hover{
+    background-color:rgb(255, 102, 0)
+}
+
+/* backgrounds et hover pour les pays */
+
+#Congoequipes{
+    background:url('../../assets/congobg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Congoequipes:hover{
+    background-size:830px 600px;
+}
+
+#Senegalequipes{
+    background:url('../../assets/senegalbg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Senegalequipes:hover{
+    background-size:830px 600px;
+}
+
+#Perouequipes{
+    background:url('../../assets/peroubg.jpg');
+    background-size:530px 400px;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+#Perouequipes:hover{
+    background-size:830px 600px;
+}
+
+#Russieequipes{
+    background:url('../../assets/russiebg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Russieequipes:hover{
+    background-size:830px 600px;
+}
+
+#Franceequipes{
+    background:url('../../assets/parisbg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Franceequipes:hover{
+    background-size:830px 600px;
+}
+
+#Algerieequipes{
+    background:url('../../assets/Algerie.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Algerieequipes:hover{
+    background-size:830px 600px;
+}
+
+/* fin de équipes */
