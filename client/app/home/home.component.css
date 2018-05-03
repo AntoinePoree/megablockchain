@@ -249,7 +249,7 @@
 /* fin de équipes */
 
 
-/* footer */
+/* section partenaires */
 
 .sponsors{
     background-color: black;
@@ -297,3 +297,122 @@
 .sponsor4{
     margin-left: 5%;
 }
+
+
+@media screen and (max-width: 767px) {
+    .titlesponsors{
+        font-size:5vw;
+        padding-top:50px;
+        font-family: 'Fjalla One', sans-serif;
+        font-style:italic;
+        font-weight:bold;
+        color: white;
+        padding-left:100px;
+        border-bottom:4px solid white;
+        display:inline-block;
+        margin-bottom:4%;
+    }
+
+    #list_sponsors{
+        display: flex;
+        flex-direction: column;
+        margin-left:12%;
+        margin-bottom: 10%;
+    }
+
+    .sponsor1{
+        margin: 3% 0% 3% 0%;
+    }
+
+    .sponsor2{
+        margin: 3% 0% 3% 0%;
+    }
+
+    .sponsor3{
+        margin: 3% 0% 3% 0%;
+    }
+
+    .sponsor4{
+        margin: 3% 0% 3% 0%;
+    }
+}
+
+/* section maps */
+
+.maps{
+    background-color: black;
+}
+
+.titlemaps{
+    font-size:40px;
+    padding-top:50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    color: white;
+    padding-left:100px;
+    border-bottom:4px solid white;
+    display:inline-block;
+    margin-bottom:1%;
+}
+
+@media screen and (max-width: 767px) {
+    .titlemaps{
+        font-size:5vw;
+        padding-top:10px;
+        font-family: 'Fjalla One', sans-serif;
+        font-style:italic;
+        font-weight:bold;
+        color: white;
+        padding-left:100px;
+        border-bottom:4px solid white;
+        display:inline-block;
+        margin-bottom:4%;
+    }
+}
+
+    .map-responsive {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        margin: 5% 0% 0% 0%;
+    }
+    
+    .map-responsive iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+    /* footer */
+
+    footer{
+        background-color: black;
+        padding-bottom: 3%;
+    }
+
+    .logofooter{
+        text-align: center;
+    }
+
+    .copyright{
+        text-align: center;
+        color:white;
+        font-family: 'Fjalla One', sans-serif;
+        font-size:14px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .logofooter{
+            padding-right:20%;
+        }
+
+        .copyright{
+        font-size:10px;
+        padding-bottom:7%;
+        }
+    }
