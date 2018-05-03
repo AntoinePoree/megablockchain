@@ -18,6 +18,7 @@ import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -35,6 +36,7 @@ export function tokenGetter() {
     AdminComponent,
     NotFoundComponent,
     HomeComponent,
+    PresentationComponent,
   ],
   imports: [
     RoutingModule,
