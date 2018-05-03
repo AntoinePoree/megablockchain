@@ -1,0 +1,141 @@
+<!-- debut de acceuil -->
+
+<div class="containeracceuil">
+  <header class="navbar" id="changecolor">
+    <span class="navitemlogo">
+      <img src="../../assets/logo.png" class="logo">
+    </span>
+    <span class="navitem">ACCUEIL</span>
+    <span class="navitem">PRÉSENTATION</span>
+    <span class="navitem">ÉQUIPES</span>
+    <span class="navitem">TOURS</span>
+  </header>
+  <div class="timer">
+    <span id="demo"></span>
+    <span class="txttimer">Avant le début de l'évenement Méga</span>
+  </div>
+
+
+</div>
+
+
+<!-- fin de acceuil -->
+
+<!-- Début présentation -->
+<div class="containerpresent">
+<app-presentation></app-presentation>
+</div>
+<!--Fin présentation-->
+
+<!-- Début de équipes -->
+<div class="containerequipes">
+  <h1 class="titleequipes">ÉQUIPES</h1>
+  <div class="containerpays">
+    <div class="colonne1equipes">
+
+
+      <div class="paysequipes" id="Congoequipes">
+        <p class="txtequipes">CONGO</p>
+        <button class="buttonequipes">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="paysequipes" id="Senegalequipes">
+        <p class="txtequipes">SÉNÉGAL</p>
+        <button class="buttonequipes">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="paysequipes" id="Franceequipes">
+        <p class="txtequipes">FRANCE</p>
+        <button class="buttonequipes">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+
+    </div>
+
+
+    <div class="colonne2equipes">
+
+
+      <div class="paysequipes" id="Perouequipes">
+        <p class="txtequipes">PÉROU</p>
+        <button class="buttonequipes">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="paysequipes" id="Russieequipes">
+        <p class="txtequipes">RUSSIE</p>
+        <button class="buttonequipes">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="paysequipes" id="Algerieequipes">
+        <p class="txtequipes">ALGÉRIE</p>
+        <button class="buttonequipes">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+<!--Fin de équipes-->
+
+<!-- debut de tour1 -->
+
+<div class="containertour1">
+
+  <div class="nextchallenge" *ngIf="changedChallenge == false" (click)="nextchallengefn()">
+    <div>
+      <i class="fas fa-arrow-circle-right" style="font-size:60px"></i>
+    </div>
+    <p>prochain challenge</p>
+  </div>
+
+  <div class="previouschallenge" *ngIf="changedChallenge == true" (click)="previouschallengefn()">
+      <div>
+          <i class="fas fa-arrow-circle-left" style="font-size:60px"></i>
+      </div>
+      <p>précèdant challenge</p>
+    </div>
+
+  <h1 class="titletour1">TOUR 1</h1>
+  <div class="contchallenge" id="challenge1">
+    <h1 class="titlechallenge">CHALLENGE 1</h1>
+    <span class="txtchallenge">Créer une calculatrice scientifique avec VueJS</span>
+    <button class="boutonchallenge">LES PARTICIPANTS</button>
+    <span class="txtchallenge">Toutes les équipes de tous les pays vont participer à ce challenge</span>
+    <span class="txtchallenge2">Le challenge débutera le 23 juin à 13h, donnez nous
+      <br>votre adresse mail si vous souhaitez être prévenu :</span>
+    <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+      <input class="enteremail" type="text" name="emailid" placeholder="enter your email" [(ngModel)]="addTaskValue">
+      <br/>
+      <input type="submit" class="buttonvalidemail" value="CONFIRMER">
+    </form>
+  </div>
+
+  <div class="contchallenge" id="challenge2">
+      <h1 class="titlechallenge">CHALLENGE 2</h1>
+      <span class="txtchallenge">Hacker le skyblog de Vladimir Poutine</span>
+      <button class="boutonchallenge">LES PARTICIPANTS</button>
+      <span class="txtchallenge">Les 6 premières équipes à s'être qualifiées au <br>challenge 1 participeront à ce challenge</span>
+      <span class="txtchallenge2">Le challenge débutera le 24 juin à 13h, donnez nous
+        <br>votre adresse mail si vous souhaitez être prévenu :</span>
+      <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+        <input class="enteremail" type="text" name="emailid" placeholder="enter your email" [(ngModel)]="addTaskValue">
+        <br/>
+        <input type="submit" class="buttonvalidemail" value="CONFIRMER">
+      </form>
+    </div>
+</div>
+
+<!-- fin de tour1 -->

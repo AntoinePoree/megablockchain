@@ -1,0 +1,404 @@
+/* debut de acceuil */
+
+.containeracceuil {
+    width: 100% ;
+    height: 100vh ;
+    position: relative;
+    display: block ;
+    background: url("../../assets/bgacceuil.jpg");
+    background-size: cover;
+    z-index:5;
+    background-attachment: fixed;
+}
+
+.containeracceuil::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(16, 16, 66, 0.81);
+    left:0;
+    top:0;
+    z-index:-1;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    padding:0;
+    transition:1s;
+    z-index:100;
+}
+
+.logo{
+    width:200px;
+    margin-top:40px;
+    margin-left:100px;
+}
+
+.navitemlogo{
+    flex:8;
+    color:white;
+}
+
+.navitem{
+    flex:1;
+    color:white;
+    width:150px;
+    text-align:center;
+    padding:10px;
+    cursor:pointer;
+    height:100%;
+    line-height:40px;
+    transition:1s;
+    font-size:17px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style:italic;
+}
+
+.navitem:hover{
+    border-bottom:2px solid red;
+}
+
+#demo {
+    z-index: 10;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    display:block;
+}
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    font-family: 'Bungee', cursive;
+}
+
+.txttimer{
+    z-index: 10;
+    color: white;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+/* fin de acceuil */
+.containerpresent {
+    background-color: whitesmoke;
+}
+
+
+/* debut de équipes */
+
+.containerequipes{
+    background:black;
+    color:white;
+    position:relative;
+    display:block;
+    width:100%;
+    margin:0;
+}
+
+.titleequipes{
+    font-size:40px;
+    padding-top:50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    padding-left:100px;
+    border-bottom:4px solid white;
+    display:inline-block;
+    padding-bottom:10px;
+}
+
+.containerpays{
+    display:block;
+    width:100%;
+    display:flex;
+    margin-top:40px;
+    max-width:1200px;
+    margin-left:50%;
+    transform:translate(-50%);
+    padding-bottom:60px;
+}
+
+.colonne1equipes{
+    flex:1;
+}
+
+.colonne2equipes{
+    flex:1;
+    padding-top:20px;
+}
+
+.paysequipes{
+    width:90%;
+    margin-left:5%;
+    min-height:300px;
+    margin-bottom:60px;
+    position: relative;
+    z-index:10;
+    transition:1s;
+}
+
+.paysequipes::before{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.txtequipes{
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    padding:20px;
+    padding-bottom:0;
+    font-family:'Fjalla One', sans-serif;
+}
+
+.buttonequipes{
+    border:none;
+    width:100px;
+    margin-left:20px;
+    background-color:rgb(255, 187, 0);
+    font-weight:bold;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.buttonequipes:hover{
+    background-color:rgb(255, 102, 0)
+}
+
+/* backgrounds et hover pour les pays */
+
+#Congoequipes{
+    background:url('../../assets/congobg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Congoequipes:hover{
+    background-size:830px 600px;
+}
+
+#Senegalequipes{
+    background:url('../../assets/senegalbg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Senegalequipes:hover{
+    background-size:830px 600px;
+}
+
+#Perouequipes{
+    background:url('../../assets/peroubg.jpg');
+    background-size:530px 400px;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+#Perouequipes:hover{
+    background-size:830px 600px;
+}
+
+#Russieequipes{
+    background:url('../../assets/russiebg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Russieequipes:hover{
+    background-size:830px 600px;
+}
+
+#Franceequipes{
+    background:url('../../assets/parisbg.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Franceequipes:hover{
+    background-size:830px 600px;
+}
+
+#Algerieequipes{
+    background:url('../../assets/Algerie.jpg');
+    background-size:600px 330px;
+    background-position:center center;
+    background-repeat: no-repeat
+}
+
+#Algerieequipes:hover{
+    background-size:830px 600px;
+}
+
+/* fin de équipes */
+
+/* debut de tour1 */
+
+.containertour1{
+    background:orange;
+    color:white;
+    position:relative;
+    display:block;
+    width:100%;
+    margin:0;
+    padding-bottom:100px;
+    overflow:hidden;
+}
+
+.nextchallenge{
+    position:absolute;
+    display:inline-block;
+    text-align:center;
+    color:black;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:bold;
+    font-family: 'Fjalla One', sans-serif;
+    right:20px;
+    top:50%;
+}
+
+.previouschallenge{
+    position:absolute;
+    display:inline-block;
+    text-align:center;
+    color:black;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:bold;
+    font-family: 'Fjalla One', sans-serif;
+    left:20px;
+    top:50%;
+}
+
+#challenge1{
+    display:block;
+    opacity:1;
+}
+
+#challenge2{
+    opacity:0;
+    position:absolute;
+    left:100vw;
+    top:120px;
+}
+
+.titletour1{
+    font-size:40px;
+    padding-top:50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    padding-left:100px;
+    border-bottom:4px solid white;
+    display:inline-block;
+    padding-bottom:10px;
+}
+
+.contchallenge{
+    width:100%;
+    min-height:600px;
+    border:1px solid;
+    margin-top:20px;
+    max-width: 600px;
+    background-color:white;
+    border-radius:20px;
+    margin-left:50%;
+    transform: translate(-50%);
+    width:80%;
+    transition:1s;
+    padding-bottom:20px;
+}
+
+.titlechallenge{
+    color:black;
+    font-family:'Fjalla One', sans-serif;
+    width:100%;
+    text-align: center;
+    margin-top:25px;
+    font-size:30px;
+}
+
+.txtchallenge{
+    color:black;
+    text-align:center;
+    display:block;
+    margin-top:40px;
+    font-family:'Fjalla One', sans-serif;
+    font-size:20px;
+}
+
+.boutonchallenge{
+    border:none;
+    border-bottom:2px solid black;
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top:10px;
+    background-color: orange;
+    cursor:pointer;
+    padding:10px;
+    font-family:'Fjalla One', sans-serif;
+    transition: 1s;
+    width:200px;
+}
+
+.boutonchallenge:hover{
+    width:250px;
+    background-color: orange
+}
+
+.txtchallenge2{
+    color:black;
+    text-align:center;
+    display:block;
+    margin-top:150px;
+    font-family:'Fjalla One', sans-serif;
+}
+
+.enteremail{
+    width:80%;
+    border:2px solid black;
+    margin-top:10px;
+    margin-left:10%;
+    text-align:center;
+    font-family:'Fjalla One', sans-serif;
+}
+
+.buttonvalidemail{
+    border:none;
+    background-color:black;
+    color:white;
+    font-family:'Fjalla One', sans-serif;
+    cursor:pointer;
+    margin-top:20px;
+    margin-left:50%;
+    transform: translate(-50%);
+    padding:10px;
+    transition: 1s;
+}
+
+.buttonvalidemail:hover{
+    background-color:rgb(39, 38, 38)
+}
+
+/* fin de tour1 */
