@@ -1,3 +1,17 @@
+# Mega Blockchain Event
+
+[Wild Code School La Loupe](https://wildcodeschool.fr/) - Hackathon 2 - May 2018
+
+Site realized in 30 hours.
+
+## Authors
+
+* [Océane Dublé](https://github.com/oceaneduble)
+* [Antoine Porée](https://github.com/AntoinePoree)
+* [Yohann Martinez](https://github.com/yohannmartinez)
+* [Bastien Champion](https://github.com/BastienChampion)
+
+
 # Angular Full Stack  
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/c11813043e4ad0f0e1e7/maintainability)](https://codeclimate.com/github/riderx/Angular-Full-Stack/maintainability)
@@ -91,5 +105,5 @@ To get more help about this project, [visit the official wiki](https://github.co
 ## Further help
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-### Author
+### Authors
 * [Davide Violante](https://github.com/DavideViolante)
