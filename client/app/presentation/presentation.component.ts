@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentationComponent implements OnInit {
 
+
+  scrolltotours(){
+    window.scrollTo(0,document.getElementById('tours').offsetTop - 50)
+  }
+  
   constructor() { }
 
   ngOnInit() {
