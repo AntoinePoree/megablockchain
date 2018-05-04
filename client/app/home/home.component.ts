@@ -3,6 +3,11 @@ import { DOCUMENT } from "@angular/platform-browser";
 import { inject } from '@angular/core/testing';
 import { Inject } from '@angular/core';
 import { element } from 'protractor';
+import { CatsComponent } from './../cats/cats.component';
+import { CatService } from '../services/cat.service';
+import { Cat } from '../shared/models/cat.model';
+import { ToastComponent } from '../shared/toast/toast.component';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +20,20 @@ export class HomeComponent implements OnInit {
   changedChallenge: boolean = false;
 
   addTaskValue = '';
+
+  cat = new Cat();
+  cats: Cat[] = [];
+  isLoading = true;
+  isEditing = false;
+
+  addCatForm: FormGroup;
+
+  pays= new FormControl('', Validators.required);
+  
+  team= new FormControl('', Validators.required);
+  teams= new FormControl('', Validators.required);
+  player= new FormControl('', Validators.required);
+  players= new FormControl('', Validators.required);
 
   onClickSubmit(data) {
     if (data.emailid >= 0) {
@@ -42,7 +61,20 @@ export class HomeComponent implements OnInit {
     this.changedChallenge = false;
   }
 
-constructor(@Inject(DOCUMENT) private doc: Document) { }
+  getCats() {
+    this.catService.getCats().subscribe(
+      data => this.cats = data,
+      error => console.log(error),
+      () => this.isLoading = false,
+    );
+    console.log(this.cats)
+  }
+
+  
+
+constructor(@Inject(DOCUMENT) private doc: Document,private catService: CatService,
+private formBuilder: FormBuilder,
+public toast: ToastComponent) { }
 
 ngOnInit() {
   var countDownDate = new Date("June 23, 2018 13:00:00").getTime();
@@ -68,6 +100,12 @@ ngOnInit() {
     } else {
       document.getElementById('changecolor').style.backgroundColor = "black";
     }
+  });
+
+  this.getCats();
+  this.addCatForm = this.formBuilder.group({
+   
+
   });
 }
 }

@@ -33,23 +33,8 @@
   <div class="containerpays">
     <div class="colonne1equipes">
 
-
-      <div class="paysequipes" id="Congoequipes">
-        <p class="txtequipes">CONGO</p>
-        <button class="buttonequipes">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="paysequipes" id="Senegalequipes">
-        <p class="txtequipes">SÉNÉGAL</p>
-        <button class="buttonequipes">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="paysequipes" id="Franceequipes">
-        <p class="txtequipes">FRANCE</p>
+      <div class="paysequipes equipet" *ngFor="let cat of cats" [ngStyle]="{'background': '#fff url(' + cat.url + ') no-repeat 0 0'}">
+        <p class="txtequipes" >{{ cat.pays }}</p>
         <button class="buttonequipes">
           <i class="fas fa-arrow-right"></i>
         </button>
@@ -60,28 +45,6 @@
 
 
     <div class="colonne2equipes">
-
-
-      <div class="paysequipes" id="Perouequipes">
-        <p class="txtequipes">PÉROU</p>
-        <button class="buttonequipes">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="paysequipes" id="Russieequipes">
-        <p class="txtequipes">RUSSIE</p>
-        <button class="buttonequipes">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="paysequipes" id="Algerieequipes">
-        <p class="txtequipes">ALGÉRIE</p>
-        <button class="buttonequipes">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
 
     </div>
 
@@ -103,11 +66,11 @@
   </div>
 
   <div class="previouschallenge" *ngIf="changedChallenge == true" (click)="previouschallengefn()">
-      <div>
-          <i class="fas fa-arrow-circle-left" style="font-size:60px"></i>
-      </div>
-      <p>précèdant challenge</p>
+    <div>
+      <i class="fas fa-arrow-circle-left" style="font-size:60px"></i>
     </div>
+    <p>précèdant challenge</p>
+  </div>
 
   <h1 class="titletour1">TOUR 1</h1>
   <div class="contchallenge" id="challenge1">
@@ -125,62 +88,62 @@
   </div>
 
   <div class="contchallenge" id="challenge2">
-      <h1 class="titlechallenge">CHALLENGE 2</h1>
-      <span class="txtchallenge">Hacker le skyblog de Vladimir Poutine</span>
-      <button class="boutonchallenge">LES PARTICIPANTS</button>
-      <span class="txtchallenge">Les 6 premières équipes à s'être qualifiées au <br>challenge 1 participeront à ce challenge</span>
-      <span class="txtchallenge2">Le challenge débutera le 24 juin à 13h, donnez nous
-        <br>votre adresse mail si vous souhaitez être prévenu :</span>
-      <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
-        <input class="enteremail" type="text" name="emailid" placeholder="enter your email" [(ngModel)]="addTaskValue">
-        <br/>
-        <input type="submit" class="buttonvalidemail" value="CONFIRMER">
-      </form>
-    </div>
+    <h1 class="titlechallenge">CHALLENGE 2</h1>
+    <span class="txtchallenge">Hacker le skyblog de Vladimir Poutine</span>
+    <button class="boutonchallenge">LES PARTICIPANTS</button>
+    <span class="txtchallenge">Les 6 premières équipes à s'être qualifiées au
+      <br>challenge 1 participeront à ce challenge</span>
+    <span class="txtchallenge2">Le challenge débutera le 24 juin à 13h, donnez nous
+      <br>votre adresse mail si vous souhaitez être prévenu :</span>
+    <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+      <input class="enteremail" type="text" name="emailid" placeholder="enter your email" [(ngModel)]="addTaskValue">
+      <br/>
+      <input type="submit" class="buttonvalidemail" value="CONFIRMER">
+    </form>
+  </div>
 </div>
 
 <!-- fin de tour1 -->
 <!--section partenaires-->
 
 <section class="sponsors">
-    <h1 class="titlesponsors">NOS PARTENAIRES</h1>
-    <div id="list_sponsors">
-      <div class="sponsor1">
-        <a href="https://wildcodeschool.fr/">
-          <img src="../../assets/WCS.jpg" alt="Wild Code School">
-        </a>
-      </div>
-      <div class="sponsor2">
-        <a href="https://www.coccinelle.fr/">
-          <img src="../../assets/coccinelle.png" alt="coccinelle">
-        </a>
-      </div>
-      <div class="sponsor3">
-        <a href="https://www.hepar.fr/?gclid=EAIaIQobChMI5I2a1aLq2gIVr7_tCh0M_QXNEAAYASAAEgLy5_D_BwE&gclsrc=aw.ds">
-          <img src="../../assets/hepar.png" alt="hepar">
-        </a>
-      </div>
-      <div class="sponsor4">
-        <a href="http://fr.oreo.eu/">
-          <img src="../../assets/oreo.png" alt="oreo">
-        </a>
-      </div>
+  <h1 class="titlesponsors">NOS PARTENAIRES</h1>
+  <div id="list_sponsors">
+    <div class="sponsor1">
+      <a href="https://wildcodeschool.fr/">
+        <img src="../../assets/WCS.jpg" alt="Wild Code School">
+      </a>
     </div>
-  </section>
-  
-  <!--section maps-->
-  <section class="maps">
-    <h1 class="titlemaps">NOUS SITUER</h1>
-    <div class="map-responsive">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.1260858405676!2d1.00964101566079!3d48.47329507925156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f7f7d69b13%3A0x44cf293e5870383a!2sWild+Code+School+-+Formation+d%C3%A9veloppeur+web!5e0!3m2!1sfr!2sfr!4v1525378420372"
-        width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="sponsor2">
+      <a href="https://www.coccinelle.fr/">
+        <img src="../../assets/coccinelle.png" alt="coccinelle">
+      </a>
     </div>
-  </section>
-  
-  <!--footer-->
-  <footer>
-    <div class="logofooter">
-      <img src="../../assets/logo.png" class="logo">
+    <div class="sponsor3">
+      <a href="https://www.hepar.fr/?gclid=EAIaIQobChMI5I2a1aLq2gIVr7_tCh0M_QXNEAAYASAAEgLy5_D_BwE&gclsrc=aw.ds">
+        <img src="../../assets/hepar.png" alt="hepar">
+      </a>
     </div>
-    <p class="copyright">Copyright ©2018 Wild Code School. Tous droits réservés. Mega Blockchain est une marque déposée.</p>
-  </footer>
+    <div class="sponsor4">
+      <a href="http://fr.oreo.eu/">
+        <img src="../../assets/oreo.png" alt="oreo">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--section maps-->
+<section class="maps">
+  <h1 class="titlemaps">NOUS SITUER</h1>
+  <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.1260858405676!2d1.00964101566079!3d48.47329507925156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f7f7d69b13%3A0x44cf293e5870383a!2sWild+Code+School+-+Formation+d%C3%A9veloppeur+web!5e0!3m2!1sfr!2sfr!4v1525378420372"
+      width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!--footer-->
+<footer>
+  <img src="../../assets/logo.png" class="logofooter">
+
+  <p class="copyright">Copyright ©2018 Wild Code School. Tous droits réservés. Mega Blockchain est une marque volée.</p>
+</footer>

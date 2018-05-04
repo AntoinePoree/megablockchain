@@ -146,13 +146,14 @@
     position: relative;
     z-index:10;
     transition:1s;
+    cursor: pointer;
 }
 
 .paysequipes::before{
     content:"";
     width:100%;
     height:100%;
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(0,0,0,0.5);
     position:absolute;
     top:0;
     left:0;
@@ -184,69 +185,13 @@
 
 /* backgrounds et hover pour les pays */
 
-#Congoequipes{
-    background:url('../../assets/congobg.jpg');
+.equipet{
     background-size:600px 330px;
-    background-position:center center;
-    background-repeat: no-repeat
-}
-
-#Congoequipes:hover{
-    background-size:830px 600px;
-}
-
-#Senegalequipes{
-    background:url('../../assets/senegalbg.jpg');
-    background-size:600px 330px;
-    background-position:center center;
-    background-repeat: no-repeat
-}
-
-#Senegalequipes:hover{
-    background-size:830px 600px;
-}
-
-#Perouequipes{
-    background:url('../../assets/peroubg.jpg');
-    background-size:530px 400px;
     background-position:center center;
     background-repeat: no-repeat;
 }
 
-#Perouequipes:hover{
-    background-size:830px 600px;
-}
-
-#Russieequipes{
-    background:url('../../assets/russiebg.jpg');
-    background-size:600px 330px;
-    background-position:center center;
-    background-repeat: no-repeat
-}
-
-#Russieequipes:hover{
-    background-size:830px 600px;
-}
-
-#Franceequipes{
-    background:url('../../assets/parisbg.jpg');
-    background-size:600px 330px;
-    background-position:center center;
-    background-repeat: no-repeat
-}
-
-#Franceequipes:hover{
-    background-size:830px 600px;
-}
-
-#Algerieequipes{
-    background:url('../../assets/Algerie.jpg');
-    background-size:600px 330px;
-    background-position:center center;
-    background-repeat: no-repeat
-}
-
-#Algerieequipes:hover{
+.equipet:hover{
     background-size:830px 600px;
 }
 
@@ -551,6 +496,10 @@
 
     .logofooter{
         text-align: center;
+        width: 250px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 20px;
     }
 
     .copyright{
