@@ -68,7 +68,7 @@
 #demo {
     z-index: 10;
     color: white;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     display:block;
 }
@@ -608,6 +608,16 @@
     border-bottom:4px solid white;
     display:inline-block;
     margin-bottom:1%;
+    }
+
+    .contteams{
+        font-size:20px;
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    .teams_pop{
+        margin-top:5%;
+        margin-left: 3%;
     }
 
 /* fin de popupteams */

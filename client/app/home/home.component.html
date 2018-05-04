@@ -191,32 +191,103 @@
   <p id="test"></p>
   <p class="croix" (click)="clearall()"><i class="fas fa-times"></i></p>
 
-  <div class="contteams" *ngIf="this.paysencours == 'congo' ">
-    <p>Les Teams :</p>
-    <p *ngFor="let cat of cats">{{cat.teams[0].name}}</p>
-    <p>Les Players :</p>
-    <p *ngFor="let cat of cats">{{cat.teams[0].players}}</p>
+  <div class="contteams" *ngIf="this.paysencours == 'congo' " >
+    <p class="teams_pop">Les Teams :</p>
+    <ul>
+      <li>Savana City</li>
+        <ul>
+          <li>Moussa</li>
+          <li>Ibrahim</li>
+        </ul>
+      <li>Tropical Family</li>
+      <ul>
+          <li>Sanka</li>
+          <li>Joséphine</li>
+        </ul>
+    </ul>
+    <!-- <p>Les Players :</p>
+    <p *ngFor="let cat of cats">- {{cat.teams[0].players}}</p> -->
      <!-- afficher dynamiquement les équipes au lieu des pays-->
   </div>
 
   <div class="contteams" *ngIf="this.paysencours == 'pérou' ">
-    Perou
+      <p>Les Teams :</p>
+      <ul>
+        <li>Macchu</li>
+          <ul>
+            <li>Pedrolito</li>
+            <li>Miguelito</li>
+          </ul>
+        <li>Picchu</li>
+        <ul>
+            <li>Pablo</li>
+            <li>Rosita</li>
+          </ul>
+      </ul>
   </div>
 
   <div class="contteams" *ngIf="this.paysencours == 'france' ">
-    France
+      <p>Les Teams :</p>
+      <ul>
+        <li>Babtou 2.0</li>
+          <ul>
+            <li>Jean Patrick</li>
+            <li>Jean Philippe</li>
+          </ul>
+        <li>Racing Angular</li>
+        <ul>
+            <li>José</li>
+            <li>Josie</li>
+          </ul>
+      </ul>
   </div>
 
   <div class="contteams" *ngIf="this.paysencours == 'russie' ">
-    Russie
+      <p>Les Teams :</p>
+      <ul>
+        <li>Vodka Absolut</li>
+          <ul>
+            <li>Vladimir</li>
+            <li>Zvetlana</li>
+          </ul>
+        <li>KGB Team</li>
+        <ul>
+            <li>Igor</li>
+            <li>Elena</li>
+          </ul>
+      </ul>
   </div>
 
   <div class="contteams" *ngIf="this.paysencours == 'sénégal' ">
-    Senegal
+      <p>Les Teams :</p>
+      <ul>
+        <li>Marabouts FC</li>
+          <ul>
+            <li>Jonathan</li>
+            <li>Jennyfer</li>
+          </ul>
+        <li>Ivoiriens United</li>
+        <ul>
+            <li>Gilbert Montagné</li>
+            <li>Ray Charles</li>
+          </ul>
+      </ul>
   </div>
 
   <div class="contteams" *ngIf="this.paysencours == 'algérie' ">
-    Algerie
+      <p>Les Teams :</p>
+      <ul>
+        <li>Tontons du Bled</li>
+          <ul>
+            <li>Aziz</li>
+            <li>Toufik</li>
+          </ul>
+        <li>Dromadaires du bitume</li>
+        <ul>
+            <li>Abdelkader</li>
+            <li>Amina</li>
+          </ul>
+      </ul>
   </div>
 </div>
 

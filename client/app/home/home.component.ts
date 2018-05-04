@@ -35,6 +35,9 @@ export class HomeComponent implements OnInit {
   // const congoid = ['5aeb191b0412b210dcf84a2e'];
   // const result = this.congoid.filter(congoid => congoid.length > 6);
   // console.log(result, congoid);
+  getTeam(){
+    
+  }
 
   clearall() {
     document.getElementById('popup').style.display = 'none';
