@@ -70,7 +70,7 @@ A window will automatically open at [localhost:4200](http://localhost:4200). Ang
 11. `git add .`
 12. `git commit -m "Going to Heroku"`
 13. `git push heroku master`
-14. `heroku open` and a window will open with your app online
+14. `heroku open` and a window will open with your app onlinee
 
 ## Preview
 ![Preview](https://raw.githubusercontent.com/DavideViolante/Angular2-Full-Stack/master/demo.gif "Preview")
